@@ -8,25 +8,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
- 
+
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.body{
-  background:linear-gradient(rgba(54, 3, 3, 0.5),rgba(29, 82, 3, 0.616)) ;
+.body {
+  background: linear-gradient(rgba(54, 3, 3, 0.5), rgba(29, 82, 3, 0.616));
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
- flex-direction: column;
-color: #333;
- font: 100% Lato, Arial, Sans Serif;
- margin: 0;
- padding: 0;
- overflow-x: hidden;
- min-height: 100vh;
+  flex-direction: column;
+  color: #333;
+  font: 100% Lato, Arial, Sans Serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
 }
-button{
+button {
   display: flex;
   font-size: 20px;
   font-weight: bold;
@@ -38,8 +38,6 @@ button{
   color: aliceblue;
   transition-duration: 0.4s;
   margin-top: 50px;
-  
-  
 }
 button:hover {
   background-color: #6d4a0e;
@@ -62,5 +60,4 @@ button:hover {
   border-color: rgb(19, 93, 3);
   box-shadow: 3px 3px 6px rgba(105, 83, 83, 0.3);
   margin-top: 20px;
-  
 }
