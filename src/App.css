@@ -11,16 +11,19 @@
   font-family: cursive;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-shadow: 5px 5px 4px rgb(187, 132, 128);
 }
 .res{
   font-size: larger;
-  color: aliceblue;
+  color: rgb(246, 98, 98);
   font-family: cursive;
   font-weight: 600;
+  text-shadow: 5px 5px 4px darkslategray;
 }
 #level{
-  color: aliceblue;
+  color: rgb(175, 181, 238);
   font-family: cursive;
+  text-shadow: 5px 5px 4px darkslategray;
 }
 
 
