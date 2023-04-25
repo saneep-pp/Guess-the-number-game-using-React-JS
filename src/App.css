@@ -13,22 +13,21 @@
   color: white;
   text-shadow: 5px 5px 4px rgb(187, 132, 128);
 }
-.res{
+.res {
   font-size: larger;
-  color: rgb(246, 98, 98);
+  color: rgb(243, 68, 68);
   font-family: cursive;
   font-weight: 600;
   text-shadow: 5px 5px 4px darkslategray;
 }
-#level{
+#level {
   color: rgb(175, 181, 238);
   font-family: cursive;
   text-shadow: 5px 5px 4px darkslategray;
 }
 
-
 .body {
-  background: linear-gradient(rgba(54, 3, 3, 0.5), rgba(29, 82, 3, 0.616));
+  background: linear-gradient(rgba(137, 9, 9, 0.5), rgba(41, 113, 4, 0.616));
   display: flex;
   align-items: center;
   justify-content: center;
