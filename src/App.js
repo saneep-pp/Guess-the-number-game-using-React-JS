@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [count,setCount]=useState(2);
+  const [count,setCount]=useState(1);
   const [score,setScore]=useState(10);
   const checkNumber = () => {
   
@@ -16,11 +16,39 @@ function App() {
     } else {
       if (random === num) {
         alert("Congrats......! You Won.");
-      
-        console.log(count);
+   
         setScore(score+10);
         document.getElementById("score").innerHTML=score;
+
+        
+       if(score===50){
         setCount(count+1);
+       }
+       else if(score===100)
+       {
+        setCount(count+1);
+       }
+       else if(score===200){
+        setCount(count+1);
+       }
+       else if(score===250){
+        setCount(count+1);
+       }
+       else if(score===300){
+        setCount(count+1);
+       }
+       else if(score===350){
+        setCount(count+1);
+       }
+       else if(score===400){
+        setCount(count+1);
+       }
+       else if(score===450){
+        setCount(count+1);
+       }
+       else if(score===500){
+        setCount(count+1);
+       }
         if(count===2){
           document.getElementById("level").innerHTML="Level 2";
           
@@ -58,11 +86,14 @@ function App() {
           document.getElementById("level").innerHTML="Level 10";
           
         }
+       
+        
        }
        else {
         alert("Your Guessing is not correct. Try again...");
         
        }
+
        
       }
       
