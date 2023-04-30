@@ -78,56 +78,56 @@ button:hover {
   margin-top: 20px;
 }
 
-.pop-up ,.pop-up1{
-  width:480px;
-  position:absolute;
-  top:0;
+.pop-up,
+.pop-up1 {
+  width: 480px;
+  position: absolute;
+  top: 0;
   left: 50%;
-  transform: translate(-50%,-50%) scale(0.01);
+  transform: translate(-50%, -50%) scale(0.01);
   background-color: aliceblue;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 20px;
   border-radius: 20px;
-  visibility:hidden;
+  visibility: hidden;
   transition: all 0.5s ease-in-out;
 }
-.pop-up-open ,.pop-up1-open{
+.pop-up-open,
+.pop-up1-open {
   visibility: visible;
   top: 71%;
-  transform: translate(-50%,-50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   box-shadow: 10px 10px 20px;
 }
-.pop-up img{
-  width:100px;
-   
+.pop-up img {
+  width: 100px;
+
   border-radius: 100%;
 
   position: absolute;
   top: -25%;
-  left:40%;
-  
-  transform: scale(1.0);
-  
+  left: 40%;
+
+  transform: scale(1);
 }
-.pop-up1 img{
-  
-   width:100px;
-   
+.pop-up1 img {
+  width: 100px;
+
   border-radius: 100%;
   position: absolute;
   top: -25%;
-  left:40%;
-  
-  transform: scale(1.0);
+  left: 40%;
+
+  transform: scale(1);
 }
-.pop-up h2{
+.pop-up h2 {
   margin-top: 15px;
   text-align: center;
   margin: 15px 0;
 }
-.pop-up1 h2{
+.pop-up1 h2 {
   margin-top: 15px;
   text-align: center;
   margin: 15px 0;

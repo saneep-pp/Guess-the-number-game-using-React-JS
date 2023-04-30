@@ -7,10 +7,10 @@ function App() {
   const checkNumber = () => {
     let num = Number(document.getElementById("input").value);
     let random = Math.floor(Math.random() * (10 - 0)) + 1;
-    const popUp=document.querySelector(".pop-up");
-    const okbtnE=document.querySelector(".okbtn");
-    const popUp1=document.querySelector(".pop-up1");
-    const okbtnE1=document.querySelector(".okbtn1");
+    const popUp = document.querySelector(".pop-up");
+    const okbtnE = document.querySelector(".okbtn");
+    const popUp1 = document.querySelector(".pop-up1");
+    const okbtnE1 = document.querySelector(".okbtn1");
 
     console.log(random);
     console.log(num);
@@ -21,9 +21,9 @@ function App() {
         // alert("Congrats......! You Won.");
         popUp.classList.add("pop-up-open");
 
-        okbtnE.addEventListener("click",()=>{
+        okbtnE.addEventListener("click", () => {
           popUp.classList.remove("pop-up-open");
-        })
+        });
 
         setScore(score + 10);
         document.getElementById("score").innerHTML = score;
@@ -70,9 +70,9 @@ function App() {
         // alert("Your Guessing is not correct. Try again...");
         popUp1.classList.add("pop-up1-open");
 
-        okbtnE1.addEventListener("click",()=>{
+        okbtnE1.addEventListener("click", () => {
           popUp1.classList.remove("pop-up1-open");
-        })
+        });
       }
     }
   };
@@ -94,28 +94,26 @@ function App() {
           max="10"
           placeholder="Guess a number (1-10)"
         />
-        
 
         <div className="btn">
           <button type="button" onClick={checkNumber}>
             Check
           </button>
-          </div>
+        </div>
 
-          <div className="pop-up">
-          <img src={require('./images/icon.gif')}/>
+        <div className="pop-up">
+          <img src={require("./images/icon.gif")} />
           <h2>You Won</h2>
-          <p>Congrats... You Won.You Earn 10 Score</p>
+          <p>Congrats... You Won.You Earned 10 Score</p>
           <button className="okbtn">OK</button>
-          </div>
+        </div>
 
-          <div className="pop-up1">
-          <img src={require('./images/cross.gif')}/>
+        <div className="pop-up1">
+          <img src={require("./images/cross.gif")} />
           <h2>You Loss</h2>
           <p>Your Guessing is not correct. Try again... </p>
-          <button className="okbtn1">OK</button> 
-          </div>
-          
+          <button className="okbtn1">OK</button>
+        </div>
       </div>
     </div>
   );
