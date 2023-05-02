@@ -79,7 +79,8 @@ button:hover {
 }
 
 .pop-up,
-.pop-up1 {
+.pop-up1,
+.pop-up2 {
   width: 480px;
   position: absolute;
   top: 0;
@@ -95,7 +96,8 @@ button:hover {
   transition: all 0.5s ease-in-out;
 }
 .pop-up-open,
-.pop-up1-open {
+.pop-up1-open,
+.pop-up2-open {
   visibility: visible;
   top: 71%;
   transform: translate(-50%, -50%) scale(1);
@@ -131,4 +133,19 @@ button:hover {
   margin-top: 15px;
   text-align: center;
   margin: 15px 0;
+}
+.pop-up2 h2 {
+  margin-top: 15px;
+  text-align: center;
+  margin: 15px 0;
+  color: red;
+}
+.pop-up2 img {
+  width: 50px;
+
+  border-radius: 100%;
+
+  position: relative;
+
+  transform: scale(1.2);
 }

@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(1);
   const [score, setScore] = useState(10);
+
   const checkNumber = () => {
     let num = Number(document.getElementById("input").value);
     let random = Math.floor(Math.random() * (10 - 0)) + 1;
@@ -11,11 +12,18 @@ function App() {
     const okbtnE = document.querySelector(".okbtn");
     const popUp1 = document.querySelector(".pop-up1");
     const okbtnE1 = document.querySelector(".okbtn1");
+    const popUp2 = document.querySelector(".pop-up2");
+    const okbtnE2 = document.querySelector(".okbtn2");
 
     console.log(random);
     console.log(num);
-    if (num === "" || num === null) {
-      alert("Input should not Empty..!");
+    if (num === 0 || num === null) {
+      // alert("Input should not Empty..!");
+      popUp2.classList.add("pop-up2-open");
+
+      okbtnE2.addEventListener("click", () => {
+        popUp2.classList.remove("pop-up2-open");
+      });
     } else {
       if (random === num) {
         // alert("Congrats......! You Won.");
@@ -113,6 +121,12 @@ function App() {
           <h2>You Loss</h2>
           <p>Your Guessing is not correct. Try again... </p>
           <button className="okbtn1">OK</button>
+        </div>
+        <div className="pop-up2">
+          <img src={require("./images/warning.gif")} />
+          <h2>Warning</h2>
+          <p>Input Should Not Empty...!</p>
+          <button className="okbtn2">OK</button>
         </div>
       </div>
     </div>
